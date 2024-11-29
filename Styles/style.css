@@ -58,6 +58,7 @@ body, html {
 
 .caps {
     font-weight: bold; /* Bold only CAPS */
+    color:rgba(201, 201, 34, 0.753);
 }
 
 /* Logo Section */
@@ -72,6 +73,14 @@ body, html {
     height: auto;
 }
 
+.countdown {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+.countdown span {
+    font-weight:400;
+    color: #E7F2F0;
+}
 /* Footer Content */
 .footer-content {
     margin-top: 20px;
@@ -149,13 +158,22 @@ body, html {
         width: 300px; /* Smaller logo for phone */
     }
 
+    .countdown {
+        font-size: 1.2rem;
+        margin-block:10px;
+        margin-right: 6%;
+    }
+    .countdown span {
+        font-weight:400;
+        color: #E7F2F0;
+    }
     .footer-content {
         text-align: center; /* Center align footer */
         padding-right: 0;
     }
 
     .tagline {
-        font-size: 1.2rem; /* Adjust tagline size */
+        font-size: 1.5rem; /* Adjust tagline size */
     }
 
     .social-icons {
