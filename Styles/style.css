@@ -7,7 +7,6 @@ body, html {
     color: #fff;
     overflow-x: hidden;
 }
-
 /* Under Construction Section */
 .under-construction {
     width: 100%;
@@ -104,4 +103,67 @@ body, html {
 
 .social-icon:hover {
     color: #ebeaf3;
+}
+
+/* Responsive Design */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .encapsulate-title {
+        font-size: 4rem; /* Adjusted font size for tablet */
+    }
+
+    .encapsulate-title-container {
+        padding-right: 100px; /* Reduced right padding for better fit */
+    }
+
+    .logo {
+        width: 600px; /* Smaller logo for tablet */
+    }
+
+    .footer-content {
+        padding-right: 50px; /* Adjusted spacing */
+    }
+
+    .tagline {
+        font-size: 1.5rem; /* Adjust tagline size */
+    }
+
+    .social-icon {
+        font-size: 1.5rem; /* Smaller icons for tablet */
+    }
+}
+
+/* Phone View */
+@media (max-width: 768px) {
+    .encapsulate-title-container {
+        text-align: center; /* Center align for smaller screens */
+        padding-right: 0; /* No padding */
+    }
+
+    .encapsulate-title {
+        font-size: 3rem; /* Reduced font size for phones */
+    }
+
+    .logo {
+        width: 300px; /* Smaller logo for phone */
+    }
+
+    .footer-content {
+        text-align: center; /* Center align footer */
+        padding-right: 0;
+    }
+
+    .tagline {
+        font-size: 1.2rem; /* Adjust tagline size */
+    }
+
+    .social-icons {
+        justify-content:flex-end; /* Center align icons */
+        margin-right: 10%;
+    }
+
+    .social-icon {
+        font-size: 1.2rem; /* Smaller icons for phone */
+    }
 }
