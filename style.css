@@ -1,0 +1,107 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Under Construction Section */
+.under-construction {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    margin-bottom: 20px; /* Added spacing below gif */
+}
+
+.under-construction-gif {
+    width: 100%; /* Full width */
+    height: auto;
+    object-fit: contain;
+}
+
+/* Divider Line */
+.divider {
+    border: none;
+    border-top: 2px solid white;
+    margin: 0;
+}
+
+/* Content Section */
+.content {
+    width: 100%;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ENCAPSULATE Title Section */
+.encapsulate-title-container {
+    margin-top: 20px;
+    text-align: right; /* Keeps it aligned to the right */
+    width: 100%;
+    padding-right: 250px; /* Increased space to add gap on the right */
+}
+
+.encapsulate-title {
+    font-size: 6rem; /* Larger font size */
+    color: #E7F2F0;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.caps {
+    font-weight: bold; /* Bold only CAPS */
+}
+
+/* Logo Section */
+.logo-section {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    width: 1000px; /* Increased size of the logo (doubled) */
+    height: auto;
+}
+
+/* Footer Content */
+.footer-content {
+    margin-top: 20px;
+    text-align: right; /* Align content to the right */
+    width: 100%;
+    padding-right: 150px; /* Increased space to add gap on the right */
+}
+
+.tagline {
+    font-size: 2rem; /* Larger font size */
+    color: #aaa;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end; /* Social icons will align to the right */
+    padding-left: 0; /* Remove extra padding */
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #ebeaf3;
+}
