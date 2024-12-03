@@ -1,206 +1,306 @@
 /* General Styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: #000;
-    color: #fff;
-    overflow-x: hidden;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
 }
 /* Under Construction Section */
 .under-construction {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000;
-    margin-bottom: 20px; /* Added spacing below gif */
-    position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  margin-bottom: 20px; /* Added spacing below gif */
+  position: relative;
 }
 
 .under-construction-gif {
-    width: 100%; /* Full width */
-    height: 30%
+  width: 100%; /* Full width */
+  height: 30%;
 }
-.gitword{
-    position: absolute;
-    top:0px;
-    width:100%;
-    height: 80%;
-
+.gitword {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 80%;
 }
 /* Divider Line */
 .divider {
-    border: none;
-    border-top: 2px solid white;
-    margin: 0;
+  border: none;
+  border-top: 2px solid white;
+  margin: 0;
 }
 
 /* Content Section */
 .content {
-    width: 100%;
-    padding: 10px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ENCAPSULATE Title Section */
 .encapsulate-title-container {
-    /* margin-top: 20px; */
-    /* text-align: right; Keeps it aligned to the right */
-    width: 100%;
-    /* padding-right: 250px; Increased space to add gap on the right */
+  /* margin-top: 20px; */
+  /* text-align: right; Keeps it aligned to the right */
+  width: 100%;
+  /* padding-right: 250px; Increased space to add gap on the right */
 }
 
 .encapsulate-title {
-   
-    text-align: center;
-    font-size: 6rem; /* Larger font size */
-    color: #e7f2f06d;
-    /* text-transform: uppercase; */
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-   
-    
+  text-align: center;
+  font-size: 6rem; /* Larger font size */
+  color: #e7f2f06d;
+  /* text-transform: uppercase; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 .poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
 
 .caps {
-    text-shadow: 1px 1px 4px whitesmoke;
-    color: #e7f2f0f4;
-    font-weight: bold; /* Bold only CAPS */
-    /* color:rgba(201, 201, 34, 0.753); */
-    transition: text-shadow ease-in-out 0.2s;
+  text-shadow: 1px 1px 4px whitesmoke;
+  color: #e7f2f0f4;
+  font-weight: bold; /* Bold only CAPS */
+  /* color:rgba(201, 201, 34, 0.753); */
+  transition: text-shadow ease-in-out 0.2s;
 }
 
 /* Logo Section */
 .logo-section {
-    margin-top: 10px;
-    text-align: left;
-    width: 100%;
+  margin-top: 10px;
+  text-align: left;
+  width: 100%;
 }
 
 .logo {
-    width: 1000px; /* Increased size of the logo (doubled) */
-    height: auto;
+  width: 1000px; /* Increased size of the logo (doubled) */
+  height: auto;
 }
 
-.countdown {
+/* .countdown {
     font-size: 2rem;
     margin-top: 20px;
 }
 .countdown span {
     font-weight:400;
     color: #E7F2F0;
+} */
+
+/* timer clock css */
+.countdown {
+  display: flex; /* Align boxes horizontally */
+  justify-content: center; /* Center the countdown boxes */
+  align-items: center; /* Vertically align items */
+  gap: 1rem; /* Add space between boxes */
+  margin-top: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column; /* Stack the number and label */
+  justify-content: center;
+  align-items: center;
+  background-color: #fffdfd; /* Box background color */
+  border: 1px solid #ccc; /* Optional: border for visual distinction */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px 15px; /* Inner padding */
+  width: 70px; /* Box width */
+  height: 90px; /* Box height */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+}
+
+.box span {
+  font-size: 1.5rem; /* Number font size */
+  font-weight: bold; /* Make numbers stand out */
+  color: #333; /* Number color */
+}
+
+.box label {
+  font-size: 0.8rem; /* Label font size */
+  color: #666; /* Label color */
+  margin-top: 5px; /* Space between number and label */
+}
+/* apply the css formate */
+/* Define the shake animation */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Default: Shake effect can apply to all screen sizes */
+.box.shake {
+  animation: shake 0.5s ease-in-out;
 }
 /* Footer Content */
 .footer-content {
-    margin-top: 20px;
-    text-align: right; /* Align content to the right */
-    width: 100%;
-    padding-right: 150px; /* Increased space to add gap on the right */
+  /* margin-top: 20px; */
+  text-align: right; /* Align content to the right */
+  width: 100%;
+  padding-right: 150px; /* Increased space to add gap on the right */
 }
 
 .tagline {
-    font-size: 2rem; /* Larger font size */
-    color: #aaa;
-    font-style: italic;
-    margin-bottom: 10px;
+  font-size: 2rem; /* Larger font size */
+  color: #aaa;
+  font-style: italic;
+  margin-bottom: 10px;
 }
 
 .social-icons {
-    display: flex;
-    gap: 20px;
-    justify-content: flex-end; /* Social icons will align to the right */
-    padding-left: 0; /* Remove extra padding */
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end; /* Social icons will align to the right */
+  padding-left: 0; /* Remove extra padding */
 }
 
 .social-icon {
-    color: #fff;
-    font-size: 2rem;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .social-icon:hover {
-    color: #ebeaf3;
+  color: #ebeaf3;
 }
 
 /* Responsive Design */
 
 /* Tablet View */
 @media (max-width: 1024px) {
-    .encapsulate-title {
-        font-size: 4rem; /* Adjusted font size for tablet */
-    }
+  .encapsulate-title {
+    font-size: 4rem; /* Adjusted font size for tablet */
+  }
 
-    .encapsulate-title-container {
-        padding-right: 100px; /* Reduced right padding for better fit */
-    }
+  .encapsulate-title-container {
+    padding-right: 100px; /* Reduced right padding for better fit */
+  }
 
-    .logo {
-        width: 600px; /* Smaller logo for tablet */
-    }
+  .logo {
+    width: 600px; /* Smaller logo for tablet */
+  }
 
-    .footer-content {
-        padding-right: 50px; /* Adjusted spacing */
-    }
+  .footer-content {
+    padding-right: 50px; /* Adjusted spacing */
+  }
 
-    .tagline {
-        font-size: 1.5rem; /* Adjust tagline size */
-    }
+  .tagline {
+    font-size: 1.5rem; /* Adjust tagline size */
+  }
 
-    .social-icon {
-        font-size: 1.5rem; /* Smaller icons for tablet */
-    }
+  .social-icon {
+    font-size: 1.5rem; /* Smaller icons for tablet */
+  }
 }
 
 /* Phone View */
 @media (max-width: 768px) {
-    .encapsulate-title-container {
-        text-align: center; /* Center align for smaller screens */
-        padding-right: 0; /* No padding */
-    }
+  .content {
+    background-image: url("/Assets/mobilebg.gif");
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100%; /* Ensures it adapts to the screen width */
+    min-height: 617px;
+  }
+  .encapsulate-title-container {
+    text-align: center; /* Center align for smaller screens */
+    padding-right: 0; /* No padding */
+  }
 
-    .encapsulate-title {
-        font-size: 3rem; /* Reduced font size for phones */
-    }
+  .encapsulate-title {
+    text-align: center;
+    font-size: 3rem; /* Reduced font size for phones */
+  }
+  .logo-section > img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 
-    .logo {
-        width: 300px; /* Smaller logo for phone */
-    }
+  .logo {
+    width: 300px; /* Smaller logo for phone */
+  }
 
-    .countdown {
-        font-size: 1.2rem;
-        margin-block:10px;
-        margin-right: 6%;
-    }
-    .countdown span {
-        font-weight:400;
-        color: #E7F2F0;
-    }
-    .footer-content {
-        text-align: center; /* Center align footer */
-        padding-right: 0;
-    }
+  /* .countdown {
+    border-radius: 7px;
+    background-color: #fffdfd;
+    width: 5%;
+    font-size: 1.2rem;
+    margin-block: 10px;
+    margin-right: 6%;
+  }
+  .countdown span {
+    font-weight: 400;
+    color: #e7f2f0;
+  } */
 
-    .tagline {
-        font-size: 1.5rem; /* Adjust tagline size */
-    }
+  /* css part of the timer */
+  .countdown {
+    flex-direction: row; /* Keep boxes in a row */
+    flex-wrap: wrap; /* Wrap boxes to the next line if needed */
+    gap: 1rem; /* Maintain spacing between boxes */
+  }
 
-    .social-icons {
-        justify-content:flex-end; /* Center align icons */
-        margin-right: 10%;
-    }
+  .box {
+    width: 30px; /* Slightly smaller boxes for mobile */
+    height: 50px;
+    padding: 5px 10px; /* Adjust padding for smaller screens */
+  }
 
-    .social-icon {
-        font-size: 1.2rem; /* Smaller icons for phone */
-    }
+  .box span {
+    font-size: 1.2rem; /* Slightly smaller numbers */
+    font-weight: bold;
+  }
+
+  .box label {
+    font-size: 0.7rem; /* Slightly smaller labels */
+  }
+
+  /* applying transistion */
+  .box.shake {
+    animation: shake 0.7s ease-in-out; /* Slightly slower shake for mobile */
+  }
+  .footer-content {
+    text-align: center; /* Center align footer */
+    padding-right: 0;
+  }
+
+  .tagline {
+    font-size: 1.5rem; /* Adjust tagline size */
+  }
+
+  .social-icons {
+    justify-content: flex-end; /* Center align icons */
+    margin-right: 10%;
+  }
+
+  .social-icon {
+    font-size: 1.2rem; /* Smaller icons for phone */
+  }
 }

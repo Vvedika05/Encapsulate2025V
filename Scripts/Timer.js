@@ -24,3 +24,21 @@ const countdown = setInterval(() => {
         document.querySelector(".countdown").textContent = "The day has arrived!";
     }
 }, 1000);
+
+function shakeBoxes() {
+    const boxes = document.querySelectorAll('.box'); // Select all boxes
+    boxes.forEach(box => {
+        box.classList.add('shake'); // Add the shake class
+    });
+
+    // Remove the shake class after the animation completes
+    setTimeout(() => {
+        boxes.forEach(box => {
+            box.classList.remove('shake');
+        });
+    }, 400); // Match the duration of the animation (0.5s for desktop)
+}
+
+// Trigger the shake every 5 seconds
+setInterval(shakeBoxes, 2000);
+
