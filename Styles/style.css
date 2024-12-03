@@ -15,14 +15,20 @@ body, html {
     align-items: center;
     background: #000;
     margin-bottom: 20px; /* Added spacing below gif */
+    position: relative;
 }
 
 .under-construction-gif {
     width: 100%; /* Full width */
-    height: auto;
-    object-fit: contain;
+    height: 30%
 }
+.gitword{
+    position: absolute;
+    top:0px;
+    width:100%;
+    height: 80%;
 
+}
 /* Divider Line */
 .divider {
     border: none;
@@ -33,7 +39,7 @@ body, html {
 /* Content Section */
 .content {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -42,29 +48,42 @@ body, html {
 
 /* ENCAPSULATE Title Section */
 .encapsulate-title-container {
-    margin-top: 20px;
-    text-align: right; /* Keeps it aligned to the right */
+    /* margin-top: 20px; */
+    /* text-align: right; Keeps it aligned to the right */
     width: 100%;
-    padding-right: 250px; /* Increased space to add gap on the right */
+    /* padding-right: 250px; Increased space to add gap on the right */
 }
 
 .encapsulate-title {
+   
+    text-align: center;
     font-size: 6rem; /* Larger font size */
-    color: #E7F2F0;
-    font-weight: normal;
-    text-transform: uppercase;
-    margin: 0;
+    color: #e7f2f06d;
+    /* text-transform: uppercase; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+   
+    
 }
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
 
 .caps {
+    text-shadow: 1px 1px 4px whitesmoke;
+    color: #e7f2f0f4;
     font-weight: bold; /* Bold only CAPS */
-    color:rgba(201, 201, 34, 0.753);
+    /* color:rgba(201, 201, 34, 0.753); */
+    transition: text-shadow ease-in-out 0.2s;
 }
 
 /* Logo Section */
 .logo-section {
     margin-top: 10px;
-    text-align: center;
+    text-align: left;
     width: 100%;
 }
 
