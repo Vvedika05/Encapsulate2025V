@@ -42,3 +42,26 @@ function shakeBoxes() {
 // Trigger the shake every 5 seconds
 setInterval(shakeBoxes, 2000);
 
+//for silder-show
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slideshower .slide');
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active'); // Remove active class from all slides
+        if (i === index) {
+            slide.classList.add('active'); // Add active class to the current slide
+        }
+    });
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length; // Loop back to the first slide
+    showSlide(currentIndex);
+}
+
+// Show the first slide initially
+showSlide(currentIndex);
+
+// Auto-slide every 5 seconds
+setInterval(nextSlide, 5000);
