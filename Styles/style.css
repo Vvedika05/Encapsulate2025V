@@ -268,8 +268,10 @@ font-size: 2rem;
     background-repeat: no-repeat; /* Prevents the image from repeating */
     width: 100%; /* Ensures it adapts to the screen width */
     min-height: 617px;
+    padding: 0!important;
   }
   .encapsulate-title-container {
+    /* margin-right:5%; */
     text-align: center; /* Center align for smaller screens */
     padding-right: 0; /* No padding */
   }
