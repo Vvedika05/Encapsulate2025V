@@ -1,79 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EnCAPSulate</title>
-    <link rel="shortcut icon" href="./Assets/Favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./Styles/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <!-- Under Construction Section -->
-    <div class="under-construction">
-      <img
-        src="./Assets/bg_encapsulate.png"
-        alt="Under Construction"
-        class="under-construction-gif"
-      />
-      <img src="./Assets/uc.gif" alt="uc" class="gitword" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EnCAPSulate</title>
+  <link rel="shortcut icon" href="./Assets/Favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./Styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="./Assets/logo2.png" alt="EnCAPSulateLogo">
+      <img src="./Assets/Home.png" alt="Home">
+      <img src="./Assets/Search.png" al="Search">
     </div>
-
-    <!-- Divider -->
-    <!-- <hr class="divider"> -->
-
-    <!-- Content Section -->
-    <div class="content">
-      <!-- ENCAPSULATE Title Section -->
-      <div class="encapsulate-title-container">
-        <h2 class="encapsulate-title">EN<span class="caps">CAPS</span>ULATE</h2>
-      </div>
-
-      <!-- Logo Section -->
-      <div class="logo-section">
-        <img src="./Assets/logo.png" alt="Encapsulate Logo" class="logo" />
-      </div>
-
-      <!-- timer implementataion -->
-      <div class="countdown">
-        <div class="box">
-          <span id="days">0</span>
-          <label>Days</label>
+  </header>
+  <main>
+    <div id="frame1">
+      <img src="./Assets/frame_!.png" alt="frame1">
+      <div class="text-overlay">
+        <p>EN<span>CA25</span>ULATE</p>
+        <div class="Timer">
+          <div class="time-unit">
+            <p class="time-value">00</p>
+            <!-- <span class="time-label">Days</span> -->
+          </div>
+          <div class="time-unit">
+            <p class="time-value">00</p>
+            <!-- <span class="time-label">Hours</span> -->
+          </div>
+          <div class="time-unit">
+            <p class="time-value">00</p>
+            <!-- <span class="time-label">Minutes</span> -->
+          </div>
+          <div class="time-unit">
+            <p class="time-value">00</p>
+            <!-- <span class="time-label">Seconds</span> -->
+          </div>
         </div>
-        <div class="box">
-          <span id="hours">0</span>
-          <label>Hours</label>
-        </div>
-        <div class="box">
-          <span id="minutes">0</span>
-          <label>Minutes</label>
-        </div>
-        <div class="box">
-          <span id="seconds">0</span>
-          <label>Seconds</label>
+        <div class="Timer-title">
+          <span class="time-label">Days</span>
+           <span class="time-label">Hours</span>
+            <span class="time-label">Minutes</span>
+              <span class="time-label">Seconds</span>
         </div>
       </div>
-
-     <!-- silder show -->
-     <div class="slideshower">
-        <div class="slide">
-            <p>"Clocking in? That’s old news. Clocking freedom? Now, that’s a vibe."</p>
-        </div>
-        <div class="slide">
-            <p>"Flex your skills, fuel your dreams—this is the economy of you."</p>
-        </div>
-        <div class="slide">
-            <p>"No boss. No boundaries. Just you and a world of possibilities. 🌍"</p>
-        </div>
     </div>
-    
-
-      <!-- Footer Content -->
+    <div id="frame2">
+      <img src="./Assets/fame_2.png" alt="frame_2">
+      <img class="image2"src="./Assets/logomain1.png" alt="EnCAPSulateLogo">
+      <p class="text-top-left">No boss. No boundaries. Just you and a world of possibilities. 🌍</p>
+      <p class="text-left-middle">Flex your skills, fuel your dreams—this is the economy of you.</p>
+      <p class="text-right-up">Clocking in? That’s old news. Clocking freedom? Now, that’s a vibe.</p>
       <div class="footer-content">
-        <!-- <h2 class="tagline">Capturing Ambition,<br />Passion and Success</h2> -->
+        <h2 class="tagline">Capturing Ambition, Passion, and Success</h2>
         <div class="social-icons">
           <a
             href="https://www.instagram.com/caps_christuniversity/profilecard/?igsh=MWQ3MXA2ZGRjMmdyMg%3D%3D"
@@ -96,6 +82,11 @@
         </div>
       </div>
     </div>
-    <script src="./Scripts/Timer.js"></script>
-  </body>
+  </main>
+  <!-- <footer>
+
+  </footer> -->
+  <script src="./Scripts/Timer.js"></script>
+</body>
+
 </html>
